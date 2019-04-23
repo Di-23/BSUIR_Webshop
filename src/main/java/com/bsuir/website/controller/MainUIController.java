@@ -45,6 +45,12 @@ public class MainUIController {
         return "index";
     }
 
+    @RequestMapping("/contacts")
+    public String goToContacts(ModelMap modelMap) {
+        initSession(modelMap);
+        return "contacts";
+    }
+
     @RequestMapping("/catalog")
     public String goToCatalog(ModelMap modelMap) {
         initSession(modelMap);
